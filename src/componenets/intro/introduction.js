@@ -13,13 +13,13 @@ function Introduction(){
                             <div className="i-title-item">Web Developer</div>
                             <div className="i-title-item">Office Manager</div>
                             <div className="i-title-item">Customer Service Rep</div>
-                            <div className="i-title-item">Bartender</div>
+                            <div className="i-title-item">Student</div>
                             <div className="i-title-item">UI/UX Designer</div>
                         </div>
                     </div>
                     <p className="idesc">
-                        I design and develop services for customers of all sizes, specializing in creating
-                        stylish, modern websites, web services in online stores.
+                    "A passionate Front End Software Developer with experience in building Web and Mobile applications 
+                    with JavaScript / Reactjs / Bootstrap / React Native and some other cool libraries and frameworks."
                     </p>
                 </div>
             </div>
