@@ -3,6 +3,6 @@ import "./Projects.css"
 
 export default function Projecs() {
   return (
-    <div>Card</div>
+    <div className='p'>card</div>
   )
 }
