@@ -3,12 +3,15 @@ import "./contact.css"
 import Phone from "../../img/telephonepng.png"
 import Email from "../../img/email.png"
 import Github from "../../img/GitHub-Mark.png"
-import { useRef, useState } from 'react'
+import { useRef, useState, useContext } from 'react'
 import  emailjs  from '@emailjs/browser'
+import { ThemeContext } from '../../context'
 
 export default function Contact() {
     const formRef = useRef()
     const [done, setDone] = useState(false)
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
 
     function handleSubmit(e){
         e.preventDefault()
@@ -44,14 +47,14 @@ export default function Contact() {
                 </div>
                 <div className='c-right'>
                     <p className='c-desc'>
-                        What's your story? Get in touch. Always open to starting a new freelancing job for those looking
+                        What's your story? Always open to starting a new project for those looking
                         for a dynamic and responsive website with beautiful UI/UX design as a top priority!
                         </p>
                         <form ref={formRef} onSubmit={handleSubmit}>
-                            <input type="text" placeholder='Name' name="user_name" />
-                            <input type="text" placeholder='Subject' name="user_subject" />
-                            <input type="text" placeholder='Email' name="user_email" />
-                            <textarea rows="5" placeholder='Message' name="message"/>
+                            <input style={{backgroundColor: darkMode && "#333" }} type="text" placeholder='Name' name="user_name" />
+                            <input style={{backgroundColor: darkMode && "#333" }} type="text" placeholder='Subject' name="user_subject" />
+                            <input style={{backgroundColor: darkMode && "#333" }} type="text" placeholder='Email' name="user_email" />
+                            <textarea style={{backgroundColor: darkMode && "#333" }} rows="5" placeholder='Message' name="message"/>
                             <button type="submit" className='submit-btn'>Submit</button>
                             {done && "Thank you..."}
                         </form>

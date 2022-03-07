@@ -3,7 +3,6 @@
 }
 .c-bg{
     height: 100%;
-    background-color: rgb(43, 155, 155);
     
 }
 .c-wrapper{
@@ -48,4 +47,20 @@ textarea {
     border: none;
     padding: 15px;
     cursor: pointer;
+}
+@media screen and (max-width: 480px){
+    .c-wrapper {
+        flex-direction: column;
+        margin: 5px;
+        padding:  0px 50px;
+
+    }
+    .c-title {
+        font-size: 30px;
+    }
+    form {
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
