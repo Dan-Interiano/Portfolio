@@ -10,10 +10,10 @@ function Introduction(){
                     <h1 className="i-name">Daniel Interiano </h1>
                     <div className="i-title">
                         <div className="i-title-wrapper">
-                            <div className="i-title-item">Web Developer</div>
+                            <div className="i-title-item">Front End Developer</div>
                             <div className="i-title-item">Office Manager</div>
                             <div className="i-title-item">Customer Service Rep</div>
-                            <div className="i-title-item">Student</div>
+                            <div className="i-title-item">Back End Developer</div>
                             <div className="i-title-item">UI/UX Designer</div>
                         </div>
                     </div>
