@@ -1,7 +1,12 @@
-import "./intro.css"
-import Me from "../../img/selfimage.JPG"
+import "./intro.css";
+import Me from "../../img/home-pic.png";
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../context'
 
-function Introduction(){
+function Introduction() {
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className="i">
             <div className="i-left">
@@ -17,17 +22,27 @@ function Introduction(){
                             <div className="i-title-item">UI/UX Designer</div>
                         </div>
                     </div>
-                    <p className="idesc">
-                    "A passionate Front End Software Developer with experience in building Web and Mobile applications 
-                    with JavaScript / Reactjs / Bootstrap / React Native and some other cool libraries and frameworks."
+                    <p className="i-desc">
+                        "A passionate Web Developer with experience in building Web and Mobile applications
+                        with JavaScript and React for front end wweb design. I'm experienced in using Object Oriented languages such as
+                        Ruby on Rails to communicate with backend databases using SQL, with Sinatra and Active Record frameworks. Ability to use
+                        Boostrap and Material frameworks for front end web design."
                     </p>
+                    <div className="home-buttons">
+                        <button className="resume-btn" style={{ backgroundColor: darkMode && "#d2a05b" }}>
+                            <a href="https://drive.google.com/file/d/12OXjBjTOi-FUZLoVfwjo_aaG03fuVkfs/view?usp=sharing" target="_blank" className="a-resume">See My Resume</a>
+                        </button>
+                        {/* <button className="contact-btn" style={{ backgroundColor: darkMode && "#d2a05b" }}>
+                            <a href="#contact">Contact Me</a>
+                        </button> */}
+                    </div>
                 </div>
             </div>
             <div className="i-right">
-                <div className="i-bg"></div>
+                <div className="i-bg" style={{ backgroundColor: darkMode && "#d2a05b" }}></div>
                 <img src={Me} alt="self image" className="i-img" />
             </div>
-            
+
         </div>
     )
 }

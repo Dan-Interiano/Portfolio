@@ -1,5 +1,9 @@
 import "./about.css"
 import Computers from "../../img/computers.jpg"
+import CSS from '../../img/csscertificate.png'
+import HTML from '../../img/htmlcertificate.png'
+
+
 
 function About(){
     return (
@@ -13,17 +17,17 @@ function About(){
             <div className="a-right">
                 <h1 className="a-title">About Me</h1>
                 <p className="a-sub">
-                    Here is the a-sub div that i will be putting something in soon.
+                    Motivated Web Developer looking for opportunities to expand my skillset.
                 </p>
                 <p className="a-desc">
-                    This is the a-desc tag that is going to be filled with a large
-                    paragraph about me! I can't wat! This is the a-desc tag that is going to be filled with a large
-                    paragraph about me! I can't wat!This is the a-desc tag that is going to be filled with a large
-                    paragraph about me! I can't wat!
+                    Currently enrolled in the Flatiron School in New York City, set to graduated in Spring 2022.
+                    I've used my front end developing skills to create apps with creative UI design, with responsive frameworks.
+                    My backend skills have allowed me to create my own RESTful APIs and managed large databases.
                 </p>
                  <div className="a-award">
-                     <p>Here is another DIV for an award!</p>
-                     <img src="" alt="" className="a-award-img" />
+                     <p>See some of the certifications I've gotten!</p>
+                     <img src={CSS} alt="css certificate" className="a-award-img" />
+                     <img src={HTML} alt="html certificate" className="a-award-img" />
                  </div>
             </div>
         </div>
