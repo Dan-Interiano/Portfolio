@@ -36,7 +36,6 @@
 }
 .i-title-wrapper{
     height: 100%;
-    background-color: green;
     animation: move 12s ease-in-out infinite alternate;
 }
 @keyframes move {
@@ -61,7 +60,7 @@
     color: #6998ab;
     display: flex;
     align-items: center;
-    background-color: red;
+    
 }
 .a-resume {
     color: white;
@@ -99,7 +98,9 @@
         text-align: center;
         height: 100%;
     }
-    
+    .i-img{
+        display: none;
+    }
 }
 
 .resume-btn {
